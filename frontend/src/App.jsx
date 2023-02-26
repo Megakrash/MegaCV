@@ -1,17 +1,11 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import UserContext from "./context/UserContext";
-
 const Home = lazy(() => import("@pages/Home"));
+const NavBar = lazy(() => import("@components/navBar/NavBar"));
+const Projets = lazy(() => import("@components/projets/Projets"));
 
 function App() {
-  const [userContext] = useState({
-    userToken: "",
-    isAdmin: "",
-    id: "",
-  });
-
   return (
     <div className="App">
       <Suspense
@@ -22,11 +16,15 @@ function App() {
           </div>
         }
       >
-        <UserContext.Provider value={userContext}>
+        <div className="App_navBar">
+          <NavBar />
+        </div>
+        <div className="App_comp">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projets" element={<Projets />} />
           </Routes>
-        </UserContext.Provider>
+        </div>
       </Suspense>
     </div>
   );

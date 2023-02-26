@@ -39,3 +39,22 @@
     }
   }
 }
+
+//-----------General-----------------
+
+.App {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  min-height: 100vh;
+  font-family: $font-text;
+
+  &_navBar {
+    width: 20%;
+  }
+
+  &_comp {
+    width: 80%;
+    background-color: white;
+  }
+}

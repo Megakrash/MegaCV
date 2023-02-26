@@ -1,0 +1,78 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-text;
+  color: $primary-color;
+
+  &_textBox {
+    padding: 1%;
+    font-size: 25px;
+    text-align: right;
+    backdrop-filter: blur(10px);
+    width: 65%;
+    background-color: $fourth-color;
+    border-radius: 15px;
+
+    span {
+      color: $tertiary-color;
+    }
+
+    &_line1 {
+      margin-right: 18%;
+
+      span {
+        color: $seventh-color;
+      }
+    }
+
+    &_line2 {
+      margin-right: 6.5%;
+    }
+
+    &_line3 {
+      margin-right: 6.5%;
+    }
+
+    &_line4 {
+      margin-right: 11.5%;
+    }
+
+    &_line5 {
+      margin-right: 15%;
+    }
+
+    &_line6 {
+      margin-right: 19.5%;
+    }
+
+    &_line7 {
+      margin-right: 18%;
+    }
+
+    &_line8 {
+      margin-right: 22.5%;
+    }
+
+    &_line9 {
+      margin-right: 18%;
+    }
+
+    &_line10 {
+      margin-right: 17.5%;
+    }
+
+    &_line11 {
+      margin-right: 14%;
+    }
+
+    &_line12 {
+      margin-right: 11.5%;
+    }
+
+    &_line13 {
+      margin-right: 42%;
+    }
+  }
+}
