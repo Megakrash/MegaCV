@@ -36,7 +36,7 @@ VALUES
   (
     'assets/images/logo_spherus_long_dark.png',
     'Spherus',
-    'Projet réalisé dans le cadre de la formation "Développeur web" à la Wild Code School de Nantes. ',
+    'Projet réalisé dans le cadre de la formation "Développeur web" à la Wild Code School de Nantes. Proposé par l\'entreprise partenaire "Origins Digital", le but est de développer une plateforme d\'hébergement vidéo.  ',
     'http://spherus.eu/',
     'ReactJs, Sass, Express, NodeJs'
   ),
