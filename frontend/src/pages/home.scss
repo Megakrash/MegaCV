@@ -9,9 +9,8 @@
   &_textBox {
     padding: 1%;
     font-size: 25px;
-    text-align: right;
     backdrop-filter: blur(10px);
-    width: 65%;
+    width: 35%;
     background-color: $fourth-color;
     border-radius: 15px;
 
@@ -20,7 +19,7 @@
     }
 
     &_line1 {
-      margin-right: 18%;
+      margin-left: 35%;
 
       span {
         color: $seventh-color;
@@ -28,51 +27,51 @@
     }
 
     &_line2 {
-      margin-right: 6.5%;
+      margin-left: 45%;
     }
 
     &_line3 {
-      margin-right: 6.5%;
+      margin-left: 45%;
     }
 
     &_line4 {
-      margin-right: 11.5%;
+      margin-left: 45%;
     }
 
     &_line5 {
-      margin-right: 15%;
+      margin-left: 45%;
     }
 
     &_line6 {
-      margin-right: 19.5%;
+      margin-left: 45%;
     }
 
     &_line7 {
-      margin-right: 18%;
+      margin-left: 62%;
     }
 
     &_line8 {
-      margin-right: 22.5%;
+      margin-left: 62%;
     }
 
     &_line9 {
-      margin-right: 18%;
+      margin-left: 62%;
     }
 
     &_line10 {
-      margin-right: 17.5%;
+      margin-left: 62%;
     }
 
     &_line11 {
-      margin-right: 14%;
+      margin-left: 62%;
     }
 
     &_line12 {
-      margin-right: 11.5%;
+      margin-left: 62%;
     }
 
     &_line13 {
-      margin-right: 42%;
+      margin-left: 35%;
     }
   }
 }

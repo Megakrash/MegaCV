@@ -39,7 +39,11 @@ function NavBar() {
           </a>
         </div>
       </div>
-      <div className="navbar_menu" />
+      <div className="navbar_menu">
+        <NavLink to="/projets">
+          <p>Réalisations</p>
+        </NavLink>
+      </div>
     </div>
   );
 }
