@@ -1,17 +1,19 @@
 .home {
+  margin-top: 5vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   font-family: $font-text;
   color: $primary-color;
 
   &_textBox {
     padding: 1%;
     font-size: 25px;
-    backdrop-filter: blur(10px);
-    width: 35%;
-    background-color: $fourth-color;
+    font-family: "Courier New", Courier, monospace;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
 
     span {
@@ -20,7 +22,7 @@
 
     &_line1 {
       span {
-        color: $seventh-color;
+        color: yellow;
       }
     }
 

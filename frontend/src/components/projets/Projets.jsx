@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import { SiEslint, SiPrettier } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 
 function Projets() {
   return (
@@ -224,6 +225,45 @@ function Projets() {
         <div className="projets_box_code">
           <FaReact className="faIcon" />
           <FaSass className="faIcon" />
+          <FaJsSquare className="faIcon" />
+          <FaGithub className="faIcon" />
+          <SiEslint className="faIcon" />
+          <SiPrettier className="faIcon" />
+          <DiVisualstudio className="faIcon" />
+        </div>
+      </div>
+      <div className="projets_box">
+        <div className="projets_box_link">
+          <NavLink to="/projets" className="projets_box_link_logo">
+            <img
+              className="projets_box_link_logo_pic"
+              src={`${
+                import.meta.env.VITE_PORT_BACKEND
+              }/assets/images/profilPic.jpg`}
+              alt="logo CV"
+            />
+          </NavLink>
+          <div className="projets_box_link_name">
+            <NavLink to="/projets">
+              <p className="projets_box_link_name_title">Mon CV en ligne</p>
+            </NavLink>
+            <a
+              href="https://github.com/Megakrash/MegaCV"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className="gitLink" />
+            </a>
+          </div>
+        </div>
+        <div className="projets_box_infos cv">
+          <p>C'est ici !</p>
+          <p>Une version plus interractive que le bon vieux CV en Pdf.</p>
+        </div>
+        <div className="projets_box_code">
+          <FaReact className="faIcon" />
+          <FaSass className="faIcon" />
+          <FaNodeJs className="faIcon" />
           <FaJsSquare className="faIcon" />
           <FaGithub className="faIcon" />
           <SiEslint className="faIcon" />

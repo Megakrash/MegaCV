@@ -9,7 +9,14 @@ const Experience = lazy(() => import("@components/experience/Experience"));
 
 function App() {
   return (
-    <div className="App">
+    <div
+      style={{
+        backgroundImage: `url(${
+          import.meta.env.VITE_PORT_BACKEND
+        }/assets/images/test2.jpg)`,
+      }}
+      className="App"
+    >
       <Suspense
         fallback={
           <div className="loader-container">

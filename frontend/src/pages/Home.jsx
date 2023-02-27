@@ -7,8 +7,27 @@ export default function Home() {
   const line3 = " ],";
   const line4 = "};";
 
+  const onDownloadPdf = () => {
+    fetch(`${import.meta.env.VITE_PORT_BACKEND}/assets/cv.pdf`).then(
+      (response) => {
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          const alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = `CV Scattolini Jonathan`;
+          alink.click();
+        });
+      }
+    );
+  };
+
   return (
     <div className="home">
+      <div>
+        <button type="button" onClick={onDownloadPdf}>
+          Télécharger le CV
+        </button>
+      </div>
       <Typist
         className="home_textBox"
         avgTypingDelay={65}

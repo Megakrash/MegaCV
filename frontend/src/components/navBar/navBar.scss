@@ -1,9 +1,9 @@
 .navbar {
   width: 85%;
   background-color: $primary-color;
-  height: 90vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  height: 96vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   margin-left: 3vh;
   border-radius: 15px;
   box-shadow: 0 0 5px 1px $secondary-color;
@@ -13,6 +13,7 @@
   &_infos {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 0.8vw;
     width: 100%;
     height: 30%;
@@ -24,7 +25,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       padding: 2%;
 
       &_pic {
@@ -84,7 +85,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-      margin-bottom: 2%;
 
       &_icon {
         width: 2vw;
@@ -95,6 +95,33 @@
           color: $secondary-color;
         }
       }
+    }
+  }
+
+  &_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 5%;
+
+    &_link {
+      font-size: 1vw;
+      margin-left: 15%;
+      font-weight: 400;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: $tertiary-color;
+      }
+    }
+
+    &_link_activ {
+      font-size: 1.1vw;
+      margin-left: 15%;
+      font-weight: 500;
+      color: $tertiary-color;
+      transition: 0.3s ease-in-out;
     }
   }
 }
