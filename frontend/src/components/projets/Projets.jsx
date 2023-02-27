@@ -53,13 +53,13 @@ function Projets() {
           </p>
           <p>
             L'application est un moteur de recherche de films et de séries basé
-            sur l'API
+            sur l'API{" "}
             <a
               href="https://www.themoviedb.org/documentation/api?language=fr"
               target="_blank"
               rel="noreferrer"
             >
-              <span>"The Movies Database"</span>
+              <span>"The Movies Database" </span>
             </a>
             (TDMB).
           </p>
@@ -119,7 +119,7 @@ function Projets() {
           </p>
           <p>
             Développement d'une plateforme d'hébergement vidéo pour la société
-            partenaire
+            partenaire{" "}
             <a
               href="https://www.origins-digital.com/"
               target="_blank"
@@ -210,7 +210,7 @@ function Projets() {
           <p>
             Une fois toutes vos options choisies l'image d'une prévision de
             votre voyage vous est fournie par notre application et
-            l'intelligence artificielle
+            l'intelligence artificielle{" "}
             <a
               href="https://openai.com/dall-e-2/"
               target="_blank"
