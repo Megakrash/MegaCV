@@ -3,7 +3,7 @@
 ### Project Initialization
 
 - Run command `npm run setup`
-- Check.env.sample then create .env in the front
+- Check .env.sample then create .env in the front
 - Run command `npm run dev-front`
 
 ### Available Commands
