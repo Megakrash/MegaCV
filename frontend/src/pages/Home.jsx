@@ -11,7 +11,7 @@ export default function Home() {
     <div className="home">
       <Typist
         className="home_textBox"
-        avgTypingDelay={70}
+        avgTypingDelay={65}
         cursor={{ show: false, hideWhenDone: true, hideWhenDoneDelay: 0 }}
       >
         <p className="home_textBox_line1">

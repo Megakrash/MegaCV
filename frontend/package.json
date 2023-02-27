@@ -1,7 +1,7 @@
 {
   "name": "template-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,7 +19,7 @@
     "react-router-dom": "^6.8.0",
     "sass": "^1.57.1",
     "template-fullstack": "file:..",
-    "react-typist": "2.0.5"
+    "react-typist": "^2.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

@@ -53,7 +53,15 @@ function Projets() {
           </p>
           <p>
             L'application est un moteur de recherche de films et de séries basé
-            sur l'API "The Movies Database" (TDMB).
+            sur l'API
+            <a
+              href="https://www.themoviedb.org/documentation/api?language=fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>"The Movies Database"</span>
+            </a>
+            (TDMB).
           </p>
           <p>
             Une partie recherche complète type "E-commerce", avec des nombreux
@@ -111,7 +119,15 @@ function Projets() {
           </p>
           <p>
             Développement d'une plateforme d'hébergement vidéo pour la société
-            partenaire <span>Origins Digital</span>.
+            partenaire
+            <a
+              href="https://www.origins-digital.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Origins Digital</span>
+            </a>
+            .
           </p>
           <p>
             Avec un modèle "freemium", les utilisateurs inscrits ont accès à
@@ -194,80 +210,24 @@ function Projets() {
           <p>
             Une fois toutes vos options choisies l'image d'une prévision de
             votre voyage vous est fournie par notre application et
-            l'intelligence artificielle <span>DALL-E</span> d'OpenAI.
-          </p>
-        </div>
-        <div className="projets_box_code">
-          <FaReact className="faIcon" />
-          <FaSass className="faIcon" />
-          <FaJsSquare className="faIcon" />
-          <FaGithub className="faIcon" />
-          <SiEslint className="faIcon" />
-          <SiPrettier className="faIcon" />
-          <DiVisualstudio className="faIcon" />
-        </div>
-      </div>
-      <div className="projets_box">
-        <div className="projets_box_link">
-          <a
-            className="projets_box_link_logo"
-            href="http://spherus.eu/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/spherus.png`}
-              alt="logo Spherus"
-            />
-          </a>
-          <div className="projets_box_link_name">
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
-              <p className="projets_box_link_name_title">Spherus</p>
-            </a>
+            l'intelligence artificielle
             <a
-              href="https://github.com/Megakrash/Spherus-"
+              href="https://openai.com/dall-e-2/"
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="gitLink" />
+              <span>DALL-E </span>
             </a>
-          </div>
-        </div>
-        <div className="projets_box_infos">
-          <p>
-            Projet n°3 lors de la formation "Développeur web" à la Wild Code
-            School de Nantes.
-          </p>
-          <p>
-            Développement d'une plateforme d'hébergement vidéo pour la société
-            partenaire <span>Origins Digital</span>.
-          </p>
-          <p>
-            Avec un modèle "freemium", les utilisateurs inscrits ont accès à
-            plus de contenus, des favoris et la personnalisation de leur profil.
-          </p>
-          <p>
-            Le principal intérêt du projet est la gestion intégrale du site en
-            back-office sur un modèle "headlless CMS".
-          </p>
-          <p>
-            Outre la possibilité d'administrer l'ensemble des contenus et des
-            utilisateurs, une partie entière est dédiée à la gestion de l'ordre
-            et du nombre de contenus à afficher.
+            d'OpenAI.
           </p>
         </div>
         <div className="projets_box_code">
           <FaReact className="faIcon" />
           <FaSass className="faIcon" />
-          <FaNodeJs className="faIcon" />
           <FaJsSquare className="faIcon" />
           <FaGithub className="faIcon" />
           <SiEslint className="faIcon" />
           <SiPrettier className="faIcon" />
-          <FaJira className="faIcon" />
           <DiVisualstudio className="faIcon" />
         </div>
       </div>

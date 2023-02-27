@@ -40,8 +40,12 @@ function NavBar() {
         </div>
       </div>
       <div className="navbar_menu">
+        <p>TECH</p>
         <NavLink to="/projets">
           <p>Réalisations</p>
+        </NavLink>
+        <NavLink to="/formation">
+          <p>Formation - certificats</p>
         </NavLink>
       </div>
     </div>
