@@ -1,5 +1,5 @@
 .projets {
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: $primary-color;
     border-radius: 15px;
     box-shadow: 0 0 5px 1px $secondary-color;
     padding: 1%;
@@ -75,6 +76,7 @@
       gap: 0.7vw;
       font-size: 0.9vw;
       max-height: 10vw;
+      min-height: 8vw;
       overflow: scroll;
       overflow-x: hidden;
       scrollbar-color: $tertiary-color;
@@ -93,6 +95,12 @@
       &::-webkit-scrollbar-thumb {
         background-color: $tertiary-color;
         border-radius: 15px;
+      }
+    }
+
+    .cv {
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
 

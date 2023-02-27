@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaGithubSquare, FaLocationArrow } from "react-icons/fa";
 
 function NavBar() {
+  const [projets, setProjets] = useState(false);
+  const [formation, setFormation] = useState(false);
+  const [parcours, setParcours] = useState(false);
+
+  const classHome = () => {
+    if (projets === false && formation === false && parcours === false) {
+      return "navbar_menu_link_activ";
+    }
+    return "navbar_menu_link";
+  };
+
+  const classProjets = () => {
+    if (projets === true) {
+      return "navbar_menu_link_activ";
+    }
+    return "navbar_menu_link";
+  };
+  const classFormation = () => {
+    if (formation === true) {
+      return "navbar_menu_link_activ";
+    }
+    return "navbar_menu_link";
+  };
+  const classExperience = () => {
+    if (parcours === true) {
+      return "navbar_menu_link_activ";
+    }
+    return "navbar_menu_link";
+  };
+
   return (
     <div className="navbar">
       <div className="navbar_infos">
         <div className="navbar_infos_box">
-          <NavLink className="navbar_infos_box_pic" to="/">
+          <NavLink
+            className="navbar_infos_box_pic"
+            to="/"
+            onClick={() => {
+              setProjets(false);
+              setFormation(false);
+              setParcours(false);
+            }}
+          >
             <img
               className="navbar_infos_box_pic_img"
               src={`${
@@ -44,16 +82,57 @@ function NavBar() {
         </div>
       </div>
       <div className="navbar_menu">
-        <p>TECH</p>
+        <NavLink to="/">
+          <button
+            type="button"
+            className={classHome()}
+            onClick={() => {
+              setProjets(false);
+              setFormation(false);
+              setParcours(false);
+            }}
+          >
+            Accueil
+          </button>
+        </NavLink>
         <NavLink to="/projets">
-          <p>Réalisations</p>
+          <button
+            type="button"
+            className={classProjets()}
+            onClick={() => {
+              setProjets(!projets);
+              setFormation(false);
+              setParcours(false);
+            }}
+          >
+            Réalisations
+          </button>
         </NavLink>
         <NavLink to="/formation">
-          <p>Formation - certificats</p>
+          <button
+            type="button"
+            className={classFormation()}
+            onClick={() => {
+              setProjets(false);
+              setFormation(!formation);
+              setParcours(false);
+            }}
+          >
+            Formation - certificats
+          </button>
         </NavLink>
-        <p>PARCOURS</p>
         <NavLink to="/parcours">
-          <p>Expérience professionnelle</p>
+          <button
+            type="button"
+            className={classExperience()}
+            onClick={() => {
+              setProjets(false);
+              setFormation(false);
+              setParcours(!parcours);
+            }}
+          >
+            Expérience professionnelle
+          </button>
         </NavLink>
       </div>
     </div>

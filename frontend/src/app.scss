@@ -8,7 +8,6 @@
     align-items: center;
     flex-direction: column;
     position: fixed;
-    background: $primary-color;
     z-index: 1;
 
     p {
@@ -45,7 +44,9 @@
 .App {
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
   font-family: $font-text;
 
@@ -55,6 +56,5 @@
 
   &_comp {
     width: 80%;
-    background-color: white;
   }
 }
