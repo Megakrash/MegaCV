@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaLocationArrow } from "react-icons/fa";
 
 function NavBar() {
   return (
@@ -21,6 +21,10 @@ function NavBar() {
             <p className="navbar_infos_box_text_title2">SCATTOLINI</p>
             <p className="navbar_infos_box_text_subtitle">Developpeur web</p>
           </div>
+        </div>
+        <div className="navbar_infos_location">
+          <FaLocationArrow className="navbar_infos_location_arrow" />
+          <p>Nantes</p>
         </div>
         <div className="navbar_infos_link">
           <a
@@ -46,6 +50,10 @@ function NavBar() {
         </NavLink>
         <NavLink to="/formation">
           <p>Formation - certificats</p>
+        </NavLink>
+        <p>PARCOURS</p>
+        <NavLink to="/parcours">
+          <p>Expérience professionnelle</p>
         </NavLink>
       </div>
     </div>

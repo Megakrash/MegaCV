@@ -33,16 +33,15 @@ function Formation() {
         <div className="projets_box_infos">
           <p>Formation "Développeur web" à la Wild Code School de Nantes.</p>
           <p>
-            La formation mène à la préparation du titre professionnel {""}{" "}
+            La formation mène à la préparation du titre professionnel{" "}
             <span>Développeur Web et Web Mobile</span>, inscrit au RNCP de
             niveau 5.
           </p>
           <p>
             Formation "intensive" basée sur la pratique. L'apprentissage se base
             sur le développement de sites intéractifs qui utilisent les
-            technologies
-            <span>HTML</span>, <span>CSS (Sass)</span>,<span>JavaScript</span>,
-            <span>React</span> et <span>NodeJS</span>.
+            technologies <span>HTML</span>, <span>CSS (Sass)</span>,{" "}
+            <span>JavaScript</span>, <span>React</span> et <span>NodeJS</span>.
           </p>
           <p>
             Le but est également de découvrir le cycle complet de la création
