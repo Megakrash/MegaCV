@@ -111,44 +111,7 @@ function Experience() {
           </p>
         </div>
       </div>
-      <div className="experience_box">
-        <div className="experience_box_link">
-          <a
-            className="experience_box_link_logo"
-            href="https://www.facebook.com/rntnantes/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="experience_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/gram.jpg`}
-              alt="logo Gram"
-            />
-          </a>
-          <div className="experience_box_link_name">
-            <a
-              className="experience_box_link_name_title"
-              href="https://www.facebook.com/rntnantes/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>Le Gram</p>
-            </a>
-            <p className="experience_box_link_name_date">2007-2012</p>
-          </div>
-        </div>
-        <div className="experience_box_infos">
-          <p>Groupement des Radios Associatives de la Métropole Nantaise.</p>
-          <p>- Gestion administrative et comptable. (CA de 400K€ à 700K€)</p>
-          <p>- Maître d'ouvrage de la Maison de la Radio associative.</p>
-          <p>
-            - Maître d'ouvrage des sites de diffusion FM et numérique sur
-            Nantes, la Baule et la Roche-sur-Yon.
-          </p>
-        </div>
-      </div>
+
       <div className="experience_box">
         <div className="experience_box_link">
           <a
@@ -180,6 +143,44 @@ function Experience() {
         <div className="experience_box_infos">
           <p>- Membre fondateur.</p>
           <p>- Gestion administrative et comptable.</p>
+        </div>
+      </div>
+      <div className="experience_box">
+        <div className="experience_box_link">
+          <a
+            className="experience_box_link_logo"
+            href="https://www.facebook.com/rntnantes/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="experience_box_link_logo_pic"
+              src={`${
+                import.meta.env.VITE_PORT_BACKEND
+              }/assets/images/gram.jpg`}
+              alt="logo Gram"
+            />
+          </a>
+          <div className="experience_box_link_name">
+            <a
+              className="experience_box_link_name_title"
+              href="https://www.facebook.com/rntnantes/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>Le Gram</p>
+            </a>
+            <p className="experience_box_link_name_date">2009-2012</p>
+          </div>
+        </div>
+        <div className="experience_box_infos">
+          <p>Groupement des Radios Associatives de la Métropole Nantaise.</p>
+          <p>- Gestion administrative et comptable. (CA de 400K€ à 700K€)</p>
+          <p>- Maître d'ouvrage de la Maison de la Radio associative.</p>
+          <p>
+            - Maître d'ouvrage des sites de diffusion FM et numérique sur
+            Nantes, la Baule et la Roche-sur-Yon.
+          </p>
         </div>
       </div>
     </div>

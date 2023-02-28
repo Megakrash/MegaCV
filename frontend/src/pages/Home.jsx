@@ -23,15 +23,23 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div>
-        <button type="button" onClick={onDownloadPdf}>
-          Télécharger le CV
-        </button>
+      <div className="home_prez">
+        <p>Jonathan SCATTOLINI</p>
+        <div className="home_prez_dev">
+          <p>Développeur web</p>
+          <button
+            className="buttonDownload"
+            type="button"
+            onClick={onDownloadPdf}
+          >
+            Télécharger CV en Pdf
+          </button>
+        </div>
       </div>
       <Typist
         className="home_textBox"
         avgTypingDelay={65}
-        cursor={{ show: false, hideWhenDone: true, hideWhenDoneDelay: 0 }}
+        cursor={{ show: false }}
       >
         <p className="home_textBox_line1">
           const <span>helloTous</span> = {line1}{" "}
@@ -56,7 +64,7 @@ export default function Home() {
         <p className="home_textBox_line6">{line2}</p>
         <Typist.Delay ms={500} />
         <p className="home_textBox_line7">
-          <span>'ReactJs'</span>,
+          <span>'ReactJS'</span>,
         </p>
         <Typist.Delay ms={250} />
         <p className="home_textBox_line8">
@@ -68,7 +76,7 @@ export default function Home() {
         </p>
         <Typist.Delay ms={250} />
         <p className="home_textBox_line10">
-          <span>'Node Js'</span>,
+          <span>'NodeJS'</span>,
         </p>
         <Typist.Delay ms={250} />
         <p className="home_textBox_line11">
