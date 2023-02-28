@@ -4,7 +4,7 @@
 
 - Run command `npm run setup`
 - Check .env.sample then create .env in the front
-- Run command `npm run dev-front`
+- Run command `npm run dev`
 
 ### Available Commands
 
