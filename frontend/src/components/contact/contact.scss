@@ -1,0 +1,25 @@
+.contact {
+  &_btn {
+    height: 60px;
+    width: 60px;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $tertiary-color;
+      color: $primary-color;
+    }
+
+    &_logo {
+      width: 50%;
+      height: auto;
+    }
+  }
+}

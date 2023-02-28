@@ -6,6 +6,7 @@ import {
   FaJira,
   FaNodeJs,
   FaSass,
+  FaFigma,
 } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import { SiEslint, SiPrettier } from "react-icons/si";
@@ -49,8 +50,16 @@ function Projets() {
         </div>
         <div className="projets_box_infos">
           <p>
-            Projet n°2 lors de la formation "Développeur web" à la Wild Code
-            School de Nantes.
+            Projet{" "}
+            <a
+              href="https://wild-movies.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Wild Movies </span>
+            </a>
+            à l'occasion de la formation "Développeur web" à la Wild Code School
+            de Nantes.
           </p>
           <p>
             L'application est un moteur de recherche de films et de séries basé
@@ -82,6 +91,7 @@ function Projets() {
           <SiPrettier className="faIcon" />
           <FaJira className="faIcon" />
           <DiVisualstudio className="faIcon" />
+          <FaFigma className="faIcon" />
         </div>
       </div>
       <div className="projets_box">
@@ -115,8 +125,12 @@ function Projets() {
         </div>
         <div className="projets_box_infos">
           <p>
-            Projet n°3 lors de la formation "Développeur web" à la Wild Code
-            School de Nantes.
+            Projet{" "}
+            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+              <span>Spherus </span>
+            </a>
+            à l'occasion de la formation "Développeur web" à la Wild Code School
+            de Nantes.
           </p>
           <p>
             Développement d'une plateforme d'hébergement vidéo pour la société
@@ -154,6 +168,7 @@ function Projets() {
           <SiPrettier className="faIcon" />
           <FaJira className="faIcon" />
           <DiVisualstudio className="faIcon" />
+          <FaFigma className="faIcon" />
         </div>
       </div>
       <div className="projets_box">
@@ -258,7 +273,7 @@ function Projets() {
         </div>
         <div className="projets_box_infos cv">
           <p>C'est ici !</p>
-          <p>Une version plus interractive que le bon vieux CV en Pdf.</p>
+          <p>Une version plus interactive que le bon vieux CV en Pdf.</p>
         </div>
         <div className="projets_box_code">
           <FaReact className="faIcon" />

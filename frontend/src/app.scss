@@ -57,4 +57,54 @@
   &_comp {
     width: 80%;
   }
+
+  &_contact {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+  }
+}
+
+//-----------Dark theme-----------------
+
+.App.dark-theme {
+  .navbar {
+    background-color: $secondary-color;
+    box-shadow: 0 0 5px 1px $primary-color;
+
+    &_menu_link {
+      color: $primary-color;
+
+      &:hover {
+        color: $tertiary-color;
+      }
+    }
+  }
+
+  .home {
+    &_prez {
+      color: $primary-color;
+    }
+  }
+
+  .home_textBox {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .projets_box {
+    background-color: rgba(56, 56, 61, 0.8);
+    box-shadow: 0 0 5px 1px $primary-color;
+    color: $primary-color;
+  }
+
+  .formation_box {
+    background-color: rgba(56, 56, 61, 0.8);
+    box-shadow: 0 0 5px 1px $primary-color;
+  }
+
+  .experience_box {
+    background-color: rgba(56, 56, 61, 0.8);
+    box-shadow: 0 0 5px 1px $primary-color;
+    color: $primary-color;
+  }
 }
