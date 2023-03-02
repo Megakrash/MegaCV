@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
+import React from "react";
+import PropTypes from "prop-types";
+import { FaLocationArrow, FaPhoneAlt, FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 
-function ContactMe() {
-  const [showForm, setShowForm] = useState(false);
-
+function ContactMe({ setShowForm }) {
   return (
     <div className="contactMe">
       <div className="contactMe_box">
@@ -32,14 +31,49 @@ function ContactMe() {
           className="contactMe_box_btn"
           type="button"
           onClick={() => {
-            setShowForm(!showForm);
+            setShowForm(true);
           }}
         >
-          sdsdsd
+          <span className="span-mother">
+            <span>F</span>
+            <span>o</span>
+            <span>r</span>
+            <span>m</span>
+            <span>u</span>
+            <span>l</span>
+            <span>a</span>
+            <span>i</span>
+            <span>r</span>
+            <span>e</span>
+          </span>
+          <span className="span-mother2">
+            <span>F</span>
+            <span>o</span>
+            <span>r</span>
+            <span>m</span>
+            <span>u</span>
+            <span>l</span>
+            <span>a</span>
+            <span>i</span>
+            <span>r</span>
+            <span>e</span>
+          </span>
         </button>
+        <a
+          className="contactMe_box_linkdin"
+          href="https://www.linkedin.com/in/jonathanscattolini/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin className="contactMe_box_linkdin_pic" />
+        </a>
       </div>
     </div>
   );
 }
 
 export default ContactMe;
+
+ContactMe.propTypes = {
+  setShowForm: PropTypes.func.isRequired,
+};
