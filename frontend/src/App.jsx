@@ -12,6 +12,7 @@ const ContactMe = lazy(() => import("@components/contactme/ContactMe"));
 
 function App() {
   const [themeToggle, setThemeToggle] = useState(true);
+  const [showForm, setShowForm] = useState(false);
 
   const themeControlObject = useMemo(() => {
     return { themeToggle, setThemeToggle };
@@ -51,11 +52,14 @@ function App() {
               <Route path="/projets" element={<Projets />} />
               <Route path="/formation" element={<Formation />} />
               <Route path="/parcours" element={<Experience />} />
-              <Route path="/contact" element={<ContactMe />} />
+              <Route
+                path="/contact"
+                element={<ContactMe setShowForm={setShowForm} />}
+              />
             </Routes>
           </div>
           <div className="App_contact">
-            <Contact />
+            <Contact showForm={showForm} setShowForm={setShowForm} />
           </div>
         </ThemeContext.Provider>
       </Suspense>

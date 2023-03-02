@@ -1,5 +1,11 @@
 .contact {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
   &_btn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
     height: 60px;
     width: 60px;
     background-color: $primary-color;
@@ -20,6 +26,177 @@
     &_logo {
       width: 50%;
       height: auto;
+    }
+  }
+
+  &_formBox {
+    width: 20%;
+    max-height: 88vh;
+    min-height: 88vh;
+    position: absolute;
+    right: 2vh;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    background-color: $tertiary-color;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px $secondary-color;
+    padding: 2%;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    &_btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 85%;
+      background-color: $secondary-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &_pic {
+        height: auto;
+        width: 20px;
+        color: $tertiary-color;
+      }
+    }
+
+    &_contact {
+      color: $secondary-color;
+      font-size: 1.5vw;
+      font-weight: 500;
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+
+      &_labInp {
+        position: relative;
+
+        .input {
+          font-size: 16px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 70%;
+          border: none;
+          border-bottom: 1px solid #515151;
+          background: transparent;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        label {
+          color: $primary-color;
+          font-size: 1.1vw;
+          position: absolute;
+          pointer-events: none;
+          left: 5px;
+          top: 0.6vw;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+
+        .input:focus ~ label,
+        .input:valid ~ label {
+          top: -20px;
+          font-size: 14px;
+          color: $secondary-color;
+        }
+
+        .bar {
+          position: relative;
+          display: block;
+          width: 74%;
+
+          &:before,
+          &:after {
+            content: "";
+            height: 2px;
+            width: 0px;
+            bottom: 1px;
+            position: absolute;
+            background: $secondary-color;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+          }
+
+          &:before {
+            left: 50%;
+          }
+
+          &:after {
+            right: 50%;
+          }
+        }
+
+        .bar:before {
+          left: 50%;
+        }
+
+        .bar:after {
+          right: 50%;
+        }
+
+        .input:focus ~ .bar:before,
+        .input:focus ~ .bar:after {
+          width: 50%;
+        }
+
+        .highlight {
+          position: absolute;
+          height: 60%;
+          width: 200px;
+          top: 25%;
+          left: 0;
+          pointer-events: none;
+          opacity: 0.5;
+        }
+
+        .input:focus ~ .highlight {
+          animation: inputHighlighter 0.3s ease;
+        }
+
+        @keyframes inputHighlighter {
+          from {
+            background: $secondary-color;
+          }
+
+          to {
+            width: 0;
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .send {
+      width: 74%;
+      background-color: $secondary-color;
+    }
+
+    .inputArea {
+      .area {
+        height: 10vw;
+        color: $primary-color;
+        border-radius: 15px;
+        text-indent: 2%;
+        background-color: $secondary-color;
+      }
+
+      .bar {
+        display: none;
+      }
     }
   }
 }

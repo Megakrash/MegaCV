@@ -1,7 +1,7 @@
 .home {
-  margin-top: 5vh;
-  margin-left: 2vw;
-  min-height: 90vh;
+  margin-top: 2vh;
+  // margin-left: 2vh;
+  min-height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,7 @@
 
   &_textBox {
     padding: 1%;
-    font-size: 25px;
+    font-size: 1.2vw;
     font-family: "Courier New", Courier, monospace;
     width: 40vw;
     background-color: rgba(0, 0, 0, 0.7);
