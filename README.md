@@ -1,3 +1,7 @@
+## What it is ?
+
+- App with ReactJs & NodeJs for my online CV / Portefolio
+
 ## Setup & Use
 
 ### Project Initialization
