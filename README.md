@@ -1,4 +1,4 @@
-## What it is ?
+## What is it ?
 
 - App with ReactJs & NodeJs for my online CV / Portefolio
 
