@@ -204,3 +204,70 @@
     }
   }
 }
+
+@media (max-width: 845px) {
+  .projets {
+    flex-direction: column;
+    gap: 4vw;
+    padding-bottom: 3%;
+
+    &_box {
+      width: 90%;
+      min-height: 250px;
+
+      &_link {
+        &_logo {
+          width: 30%;
+
+          &_pic {
+            width: 80%;
+          }
+        }
+
+        &_name {
+          &_title {
+            font-size: 4.5em;
+          }
+
+          &_date {
+            font-size: 0.8vw;
+          }
+
+          .gitLink {
+            width: 20px;
+          }
+        }
+      }
+
+      &_infos {
+        font-size: 15px;
+        max-height: initial;
+        min-height: initial;
+        overflow: unset;
+        overflow-x: none;
+      }
+
+      &_code {
+        gap: 3vw;
+        margin-top: 2%;
+
+        .faIcon {
+          width: 22px;
+        }
+      }
+    }
+
+    .funky-container {
+      display: inline-block;
+      position: relative;
+      top: -10%;
+      left: -5%;
+      margin-bottom: 7%;
+
+      .funky-base,
+      .funky-letter {
+        font-size: 5em;
+      }
+    }
+  }
+}

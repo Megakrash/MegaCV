@@ -1,12 +1,10 @@
 .home {
   margin-top: 2vh;
-  // margin-left: 2vh;
   min-height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1vw;
-  // align-items: center;
   font-family: $font-text;
   color: $primary-color;
 
@@ -168,6 +166,35 @@
 
     &_line12 {
       margin-left: 30%;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .home {
+    width: 100%;
+    min-height: 667px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+
+    &_prez {
+      p {
+        font-size: 2.5vw;
+        display: none;
+      }
+
+      &_dev {
+        .buttonDownload {
+          width: 200px;
+          font-size: 15px;
+        }
+      }
+    }
+
+    &_textBox {
+      font-size: 2em;
+      width: 70%;
     }
   }
 }

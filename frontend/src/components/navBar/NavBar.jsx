@@ -49,16 +49,16 @@ function NavBar() {
   return (
     <div className="allNavbar">
       <div className="navbar">
-        <div className="navbar_toogle">
-          <label className="switch">
-            <input
-              type="checkbox"
-              onChange={() => setThemeToggle(!themeToggle)}
-            />
-            <span className="slider" />
-          </label>
-        </div>
         <div className="navbar_infos">
+          <div className="navbar_infos_toogle">
+            <label className="switch">
+              <input
+                type="checkbox"
+                onChange={() => setThemeToggle(!themeToggle)}
+              />
+              <span className="slider" />
+            </label>
+          </div>
           <div className="navbar_infos_box">
             <NavLink
               className="navbar_infos_box_pic"

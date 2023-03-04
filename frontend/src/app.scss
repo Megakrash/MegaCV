@@ -109,3 +109,18 @@
     color: $primary-color;
   }
 }
+
+@media (max-width: 845px) {
+  .App {
+    min-height: inherit;
+    flex-direction: column;
+
+    &_navBar {
+      width: 100%;
+    }
+
+    &_comp {
+      width: 100%;
+    }
+  }
+}

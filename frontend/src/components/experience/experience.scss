@@ -32,6 +32,10 @@
         &_pic {
           width: 90%;
         }
+
+        .ateq {
+          width: 130%;
+        }
       }
 
       &_name {
@@ -67,6 +71,56 @@
       gap: 0.7vw;
       font-size: 0.9vw;
       max-height: 10vw;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .experience {
+    flex-direction: column;
+    gap: 4vw;
+    padding-bottom: 3%;
+
+    &_box {
+      width: 90%;
+      padding: 2%;
+
+      &_link {
+        &_logo {
+          width: 30%;
+
+          &_pic {
+            width: 85%;
+          }
+
+          .ateq {
+            width: 100%;
+          }
+        }
+
+        &_name {
+          &_title {
+            font-weight: 600;
+            font-family: $font-text;
+            text-align: center;
+            font-size: 25px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+              color: $tertiary-color;
+            }
+          }
+
+          &_date {
+            font-size: 18px;
+          }
+        }
+      }
+
+      &_infos {
+        font-size: 15px;
+        max-height: none;
+      }
     }
   }
 }

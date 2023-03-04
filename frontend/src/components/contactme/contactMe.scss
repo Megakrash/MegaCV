@@ -194,3 +194,52 @@
     }
   }
 }
+
+@media (max-width: 845px) {
+  .contactMe {
+    margin-top: 2vh;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_box {
+      width: 90%;
+
+      &_title {
+        gap: 2vw;
+
+        &_title {
+          font-size: 4em;
+        }
+
+        &_subtitle {
+          font-size: 4.5em;
+        }
+      }
+
+      &_infos {
+        gap: 2vw;
+        margin-bottom: 1%;
+
+        &_location {
+          gap: 2vw;
+
+          &_logo {
+            width: 2em;
+          }
+
+          &_text {
+            font-size: 2em;
+          }
+        }
+      }
+
+      &_linkdin {
+        width: 3vw;
+
+        &_pic {
+          width: 4em;
+        }
+      }
+    }
+  }
+}
