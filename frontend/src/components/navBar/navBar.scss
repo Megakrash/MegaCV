@@ -14,76 +14,74 @@
     display: flex;
     flex-direction: column;
 
-    &_toogle {
-      background-color: $tertiary-color;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-
-      .switch {
-        margin-top: 0.6vw;
-        margin-right: 0.6vw;
-        // margin-left: 2%;
-        font-size: 17px;
-        position: relative;
-        display: inline-block;
-        width: 3.5em;
-        height: 1.9em;
-      }
-
-      .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $secondary-color;
-        transition: 0.5s;
-        border-radius: 30px;
-      }
-
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 1.4em;
-        width: 1.4em;
-        border-radius: 50%;
-        left: 10%;
-        bottom: 15%;
-        // box-shadow: inset 15px -4px 0px 15px $tertiary-color;
-        box-shadow: inset 8px -4px 0px 0px $tertiary-color;
-        background: $secondary-color;
-        transition: 0.5s;
-      }
-
-      input:checked + .slider {
-        background-color: $secondary-color;
-      }
-
-      input:checked + .slider:before {
-        transform: translateX(100%);
-        // box-shadow: inset 8px -4px 0px 0px $tertiary-color;
-        box-shadow: inset 15px -4px 0px 15px $tertiary-color;
-      }
-    }
-
     &_infos {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      gap: 0.8vw;
+      gap: 0.4vw;
       width: 100%;
       height: 35%;
       background-color: $tertiary-color;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      &_toogle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 1%;
+
+        .switch {
+          margin-top: 0.6vw;
+          margin-right: 0.6vw;
+          font-size: 17px;
+          position: relative;
+          display: inline-block;
+          width: 3.5em;
+          height: 1.9em;
+        }
+
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: $secondary-color;
+          transition: 0.5s;
+          border-radius: 30px;
+        }
+
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 1.4em;
+          width: 1.4em;
+          border-radius: 50%;
+          left: 10%;
+          bottom: 15%;
+          // box-shadow: inset 15px -4px 0px 15px $tertiary-color;
+          box-shadow: inset 8px -4px 0px 0px $tertiary-color;
+          background: $secondary-color;
+          transition: 0.5s;
+        }
+
+        input:checked + .slider {
+          background-color: $secondary-color;
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(100%);
+          box-shadow: inset 15px -4px 0px 15px $tertiary-color;
+        }
+      }
 
       &_box {
         display: flex;
@@ -188,6 +186,83 @@
         font-weight: 500;
         color: $tertiary-color;
         transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .allNavbar {
+    .navbar {
+      width: 95%;
+      min-width: 340px;
+      height: auto;
+      margin: auto;
+      margin-top: 2vh;
+
+      &_infos {
+        gap: 0.3em;
+
+        &_box {
+          &_pic {
+            width: 25%;
+          }
+
+          &_text {
+            width: 70%;
+
+            &_title {
+              font-size: 4em;
+            }
+
+            &_title2 {
+              font-size: 4em;
+            }
+
+            &_subtitle {
+              font-size: 3em;
+            }
+          }
+        }
+
+        &_location {
+          width: 100%;
+          gap: 2vw;
+
+          &_arrow {
+            width: 2em;
+          }
+
+          p {
+            font-size: 2em;
+          }
+        }
+
+        &_link {
+          width: 100%;
+
+          &_icon {
+            width: 45px;
+          }
+        }
+      }
+
+      &_menu {
+        justify-content: center;
+        align-items: center;
+        gap: 2.3vw;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+        &_link {
+          font-size: 18px;
+          margin-left: 0%;
+        }
+
+        &_link_activ {
+          font-size: 21px;
+          margin-left: 0%;
+        }
       }
     }
   }

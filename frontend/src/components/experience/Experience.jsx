@@ -12,7 +12,7 @@ function Experience() {
             rel="noreferrer"
           >
             <img
-              className="experience_box_link_logo_pic"
+              className="experience_box_link_logo_pic ateq"
               src={`${
                 import.meta.env.VITE_PORT_BACKEND
               }/assets/images/ecophone.jpg`}
@@ -51,7 +51,7 @@ function Experience() {
             rel="noreferrer"
           >
             <img
-              className="experience_box_link_logo_pic"
+              className="experience_box_link_logo_pic ateq"
               src={`${
                 import.meta.env.VITE_PORT_BACKEND
               }/assets/images/ateq.jpg`}
@@ -154,7 +154,7 @@ function Experience() {
             rel="noreferrer"
           >
             <img
-              className="experience_box_link_logo_pic"
+              className="experience_box_link_logo_pic ateq"
               src={`${
                 import.meta.env.VITE_PORT_BACKEND
               }/assets/images/gram.jpg`}

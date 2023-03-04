@@ -63,6 +63,11 @@
         height: auto;
         width: 20px;
         color: $tertiary-color;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: $delete-color;
+        }
       }
     }
 
@@ -196,6 +201,58 @@
 
       .bar {
         display: none;
+      }
+    }
+  }
+
+  .sendCheck {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 845px) {
+  .contact {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    &_btn {
+      display: none;
+    }
+
+    &_formBox {
+      width: 80%;
+      right: initial;
+      top: 2vh;
+      left: 10%;
+      gap: 5vw;
+
+      &_contact {
+        font-size: 3.5em;
+      }
+
+      &_form {
+        gap: 6vw;
+
+        &_labInp {
+          position: relative;
+
+          label {
+            font-size: 2em;
+          }
+
+          .input:focus ~ label,
+          .input:valid ~ label {
+            top: -15px;
+          }
+        }
+      }
+
+      .inputArea {
+        .area {
+          height: 30vw;
+          text-indent: 3%;
+        }
       }
     }
   }

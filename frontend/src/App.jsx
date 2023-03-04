@@ -44,7 +44,7 @@ function App() {
       >
         <ThemeContext.Provider value={themeControlObject}>
           <div className="App_navBar">
-            <NavBar />
+            <NavBar showForm={showForm} setShowForm={setShowForm} />
           </div>
           <div className="App_comp">
             <Routes>
