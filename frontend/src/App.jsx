@@ -18,22 +18,8 @@ function App() {
     return { themeToggle, setThemeToggle };
   }, [themeToggle]);
 
-  const backgroundStyle = () => {
-    if (themeToggle === true) {
-      return `url(${
-        import.meta.env.VITE_PORT_BACKEND
-      }/assets/images/backdark.jpg)`;
-    }
-    return `url(${
-      import.meta.env.VITE_PORT_BACKEND
-    }/assets/images/backlight.jpg)`;
-  };
-
   return (
-    <div
-      className={!themeToggle ? "App light-theme" : "App dark-theme"}
-      style={{ backgroundImage: backgroundStyle() }}
-    >
+    <div className={!themeToggle ? "App light-theme" : "App dark-theme"}>
       <Suspense
         fallback={
           <div className="loader-container">

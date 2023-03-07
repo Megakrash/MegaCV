@@ -11,6 +11,10 @@ import {
 import { DiVisualstudio } from "react-icons/di";
 import { SiEslint, SiPrettier } from "react-icons/si";
 import { NavLink } from "react-router-dom";
+import Wildlogo from "../../assets/images/wildmovies.svg";
+import Spherus from "../../assets/images/spherus.png";
+import Mindtrip from "../../assets/images/mindtrip.png";
+import Profil from "../../assets/images/profilPic.jpg";
 
 function Projets() {
   return (
@@ -25,9 +29,7 @@ function Projets() {
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/wildmovies.svg`}
+              src={Wildlogo}
               alt="logo WildMovies"
             />
           </a>
@@ -104,9 +106,7 @@ function Projets() {
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/spherus.png`}
+              src={Spherus}
               alt="logo Spherus"
             />
           </a>
@@ -181,9 +181,7 @@ function Projets() {
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/mindtrip.png`}
+              src={Mindtrip}
               alt="logo Mindtrip"
             />
           </a>
@@ -252,9 +250,7 @@ function Projets() {
           <NavLink to="/projets" className="projets_box_link_logo">
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/profilPic.jpg`}
+              src={Profil}
               alt="logo CV"
             />
           </NavLink>

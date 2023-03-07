@@ -53,6 +53,12 @@
         &_text {
           font-size: 1.2vw;
         }
+
+        .mailto {
+          background: transparent;
+          cursor: pointer;
+          color: $primary-color;
+        }
       }
     }
 

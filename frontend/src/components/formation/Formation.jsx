@@ -1,4 +1,9 @@
 import React from "react";
+import Angular from "../../assets/certificats/angular.jpg";
+import Html from "../../assets/certificats/html.jpg";
+import JavaScript from "../../assets/certificats/javaScript.jpg";
+import Terminal from "../../assets/certificats/terminal.jpg";
+import WildLogo from "../../assets/images/wildlogo.png";
 
 function Formation() {
   return (
@@ -13,9 +18,7 @@ function Formation() {
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/wildlogo.png`}
+              src={WildLogo}
               alt="logo Wild Code School"
             />
           </a>
@@ -59,36 +62,28 @@ function Formation() {
       <div className="formation_box">
         <img
           className="formation_box_img"
-          src={`${
-            import.meta.env.VITE_PORT_BACKEND
-          }/assets/certificats/javaScript.jpg`}
+          src={JavaScript}
           alt="logo Wild Code School"
         />
       </div>
       <div className="formation_box">
         <img
           className="formation_box_img"
-          src={`${
-            import.meta.env.VITE_PORT_BACKEND
-          }/assets/certificats/angular.jpg`}
+          src={Angular}
           alt="logo Wild Code School"
         />
       </div>
       <div className="formation_box">
         <img
           className="formation_box_img"
-          src={`${
-            import.meta.env.VITE_PORT_BACKEND
-          }/assets/certificats/html.jpg`}
+          src={Html}
           alt="logo Wild Code School"
         />
       </div>
       <div className="formation_box">
         <img
           className="formation_box_img"
-          src={`${
-            import.meta.env.VITE_PORT_BACKEND
-          }/assets/certificats/terminal.jpg`}
+          src={Terminal}
           alt="logo Wild Code School"
         />
       </div>
