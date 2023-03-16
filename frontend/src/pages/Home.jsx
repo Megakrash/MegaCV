@@ -1,5 +1,6 @@
 import React from "react";
 import Typist from "react-typist";
+import Cv from "../assets/cv.pdf";
 
 export default function Home() {
   const line1 = "{";
@@ -8,17 +9,15 @@ export default function Home() {
   const line4 = "};";
 
   const onDownloadPdf = () => {
-    fetch(`${import.meta.env.VITE_PORT_BACKEND}/assets/cv.pdf`).then(
-      (response) => {
-        response.blob().then((blob) => {
-          const fileURL = window.URL.createObjectURL(blob);
-          const alink = document.createElement("a");
-          alink.href = fileURL;
-          alink.download = `CV Scattolini Jonathan`;
-          alink.click();
-        });
-      }
-    );
+    fetch(Cv).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        const alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = `CV Scattolini Jonathan`;
+        alink.click();
+      });
+    });
   };
 
   return (

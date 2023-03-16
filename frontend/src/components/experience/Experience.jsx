@@ -1,4 +1,9 @@
 import React from "react";
+import Ecophone from "../../assets/images/ecophone.jpg";
+import Ateq from "../../assets/images/ateq.jpg";
+import Prun from "../../assets/images/prun.jpg";
+import Lds from "../../assets/images/labo.jpg";
+import Gram from "../../assets/images/gram.jpg";
 
 function Experience() {
   return (
@@ -13,9 +18,7 @@ function Experience() {
           >
             <img
               className="experience_box_link_logo_pic ateq"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/ecophone.jpg`}
+              src={Ecophone}
               alt="logo Ecophone44"
             />
           </a>
@@ -52,9 +55,7 @@ function Experience() {
           >
             <img
               className="experience_box_link_logo_pic ateq"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/ateq.jpg`}
+              src={Ateq}
               alt="logo Ateq"
             />
           </a>
@@ -84,9 +85,7 @@ function Experience() {
           >
             <img
               className="experience_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/prun.jpg`}
+              src={Prun}
               alt="logo Prun"
             />
           </a>
@@ -122,9 +121,7 @@ function Experience() {
           >
             <img
               className="experience_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/labo.jpg`}
+              src={Lds}
               alt="logo Labo des savoirs"
             />
           </a>
@@ -155,9 +152,7 @@ function Experience() {
           >
             <img
               className="experience_box_link_logo_pic ateq"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/gram.jpg`}
+              src={Gram}
               alt="logo Gram"
             />
           </a>

@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { FaLinkedin, FaGithubSquare, FaLocationArrow } from "react-icons/fa";
 import ThemeContext from "../../contexts/ThemeContext";
+import profilPic from "../../assets/images/profilPic.jpg";
 
 function NavBar() {
   const [projets, setProjets] = useState(false);
@@ -71,9 +72,7 @@ function NavBar() {
             >
               <img
                 className="navbar_infos_box_pic_img"
-                src={`${
-                  import.meta.env.VITE_PORT_BACKEND
-                }/assets/images/profilPic.jpg`}
+                src={profilPic}
                 alt="profil"
               />
             </NavLink>

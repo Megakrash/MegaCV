@@ -1,26 +1,25 @@
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 import PropTypes from "prop-types";
 import { GoMail } from "react-icons/go";
 import { FaTimes } from "react-icons/fa";
 
 function Contact({ showForm, setShowForm }) {
-  const [nom, setNom] = useState("");
-  const [prenom, setPrenom] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
   const [mailSend, setMailSend] = useState(false);
 
   const contactContainer = useRef();
+  const form = useRef();
 
-  const sendMail = () => {
-    axios
-      .post(`${import.meta.env.VITE_PORT_BACKEND}/send_email`, {
-        nom,
-        prenom,
-        email,
-        text,
-      })
+  const sendMail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3u0dzfj",
+        "template_whc9o7u",
+        form.current,
+        "nAGyOPxwIvmlkY5wu"
+      )
       .then(() => {
         setMailSend(true);
       })
@@ -74,36 +73,25 @@ function Contact({ showForm, setShowForm }) {
               <div className="contact_formBox_contact">
                 <p>Remplissez le formulaire et je vous répond au plus vite !</p>
               </div>
-              <form className="contact_formBox_form" action="submit">
+              <form
+                className="contact_formBox_form"
+                ref={form}
+                onSubmit={sendMail}
+              >
                 <div className="contact_formBox_form_labInp">
-                  <input
-                    className="input"
-                    type="text"
-                    onChange={(e) => setNom(e.target.value)}
-                    required
-                  />
+                  <input className="input" type="text" name="nom" required />
                   <span className="highlight" />
                   <span className="bar" />
                   <label htmlFor="contact formulaire">Nom</label>
                 </div>
                 <div className="contact_formBox_form_labInp">
-                  <input
-                    className="input"
-                    type="text"
-                    onChange={(e) => setPrenom(e.target.value)}
-                    required
-                  />
+                  <input className="input" type="text" name="prenom" required />
                   <span className="highlight" />
                   <span className="bar" />
                   <label htmlFor="contact formulaire">Prénom</label>
                 </div>
                 <div className="contact_formBox_form_labInp">
-                  <input
-                    className="input"
-                    type="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
+                  <input className="input" type="email" name="email" required />
                   <span className="highlight" />
                   <span className="bar" />
                   <label htmlFor="contact formulaire">Email</label>
@@ -112,40 +100,34 @@ function Contact({ showForm, setShowForm }) {
                   <textarea
                     className="input area"
                     type="text"
-                    onChange={(e) => setText(e.target.value)}
+                    name="message"
                     required
                   />
                   <span className="highlight" />
                   <span className="bar" />
                   <label htmlFor="contact formulaire">Message</label>
                 </div>
+                <button className="contactMe_box_btn send" type="submit">
+                  <span className="span-mother">
+                    <span>E</span>
+                    <span>n</span>
+                    <span>v</span>
+                    <span>o</span>
+                    <span>y</span>
+                    <span>e</span>
+                    <span>r</span>
+                  </span>
+                  <span className="span-mother2">
+                    <span>E</span>
+                    <span>n</span>
+                    <span>v</span>
+                    <span>o</span>
+                    <span>y</span>
+                    <span>e</span>
+                    <span>r</span>
+                  </span>
+                </button>
               </form>
-              <button
-                className="contactMe_box_btn send"
-                type="button"
-                onClick={() => {
-                  sendMail();
-                }}
-              >
-                <span className="span-mother">
-                  <span>E</span>
-                  <span>n</span>
-                  <span>v</span>
-                  <span>o</span>
-                  <span>y</span>
-                  <span>e</span>
-                  <span>r</span>
-                </span>
-                <span className="span-mother2">
-                  <span>E</span>
-                  <span>n</span>
-                  <span>v</span>
-                  <span>o</span>
-                  <span>y</span>
-                  <span>e</span>
-                  <span>r</span>
-                </span>
-              </button>
             </div>
           ) : (
             <div className="contact_formBox sendCheck">

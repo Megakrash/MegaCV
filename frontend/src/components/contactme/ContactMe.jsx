@@ -18,13 +18,24 @@ function ContactMe({ setShowForm }) {
           </div>
           <div className="contactMe_box_infos_location">
             <GoMail className="contactMe_box_infos_location_logo" />
-            <p className="contactMe_box_infos_location_text">
+            <button
+              type="button"
+              className="contactMe_box_infos_location_text mailto"
+              onClick={() => {
+                window.location = "mailto:jscattolini@gmail.com";
+              }}
+            >
               jscattolini@gmail.com
-            </p>
+            </button>
           </div>
           <div className="contactMe_box_infos_location">
             <FaPhoneAlt className="contactMe_box_infos_location_logo" />
-            <p className="contactMe_box_infos_location_text">06 28 33 54 39</p>
+            <a
+              href="tel:+33628335439"
+              className="contactMe_box_infos_location_text"
+            >
+              06 28 33 54 39
+            </a>
           </div>
         </div>
         <button

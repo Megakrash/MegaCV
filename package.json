@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "Portefolio & CV Online",
   "scripts": {
-    "setup": "npm i && husky install && npm --prefix ./frontend i && npm --prefix ./backend i",
-    "migrate": "cd backend/ && node migrate.js && cd ..",
-    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./frontend run dev\" \"npm --prefix ./backend run dev\"",
-    "dev-front": "npm --prefix ./frontend run dev",
-    "dev-back": "npm --prefix ./backend run dev",
-    "lint": "npm --prefix ./frontend run lint && npm --prefix ./backend run lint",
-    "fix": "npm --prefix ./frontend run fix && npm --prefix ./backend run fix"
+    "setup": "npm i && husky install && npm --prefix ./frontend i",
+    "dev": "npm --prefix ./frontend run dev",
+    "lint": "npm --prefix ./frontend run lint",
+    "fix": "npm --prefix ./frontend run fix"
   },
   "keywords": [],
   "author": "Wild Code School",
@@ -19,6 +16,8 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "react-slideshow-image": "^4.2.1",
     "react-typist": "^2.0.5",
     "sass": "^1.57.1"
   }

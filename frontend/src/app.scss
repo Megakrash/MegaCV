@@ -48,6 +48,7 @@
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(https://images.pexels.com/photos/7974/pexels-photo.jpg);
   min-height: 100vh;
   font-family: $font-text;
 
@@ -63,6 +64,8 @@
 //-----------Dark theme-----------------
 
 .App.dark-theme {
+  background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
   .navbar {
     background-color: transparent;
     box-shadow: 0 0 5px 1px $primary-color;

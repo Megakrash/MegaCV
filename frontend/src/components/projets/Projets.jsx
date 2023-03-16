@@ -11,6 +11,10 @@ import {
 import { DiVisualstudio } from "react-icons/di";
 import { SiEslint, SiPrettier } from "react-icons/si";
 import { NavLink } from "react-router-dom";
+import Wildlogo from "../../assets/images/wildmovies.svg";
+import Spherus from "../../assets/images/spherus.png";
+import Mindtrip from "../../assets/images/mindtrip.png";
+import Profil from "../../assets/images/profilPic.jpg";
 
 function Projets() {
   return (
@@ -25,9 +29,7 @@ function Projets() {
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/wildmovies.svg`}
+              src={Wildlogo}
               alt="logo WildMovies"
             />
           </a>
@@ -98,20 +100,22 @@ function Projets() {
         <div className="projets_box_link">
           <a
             className="projets_box_link_logo"
-            href="http://spherus.eu/"
+            href="https://spherus-app.megakrash.com/"
             target="_blank"
             rel="noreferrer"
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/spherus.png`}
+              src={Spherus}
               alt="logo Spherus"
             />
           </a>
           <div className="projets_box_link_name">
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://spherus-app.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="projets_box_link_name_title">Spherus</p>
             </a>
             <a
@@ -126,7 +130,11 @@ function Projets() {
         <div className="projets_box_infos">
           <p>
             Projet{" "}
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://spherus-app.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>Spherus </span>
             </a>
             à l'occasion de la formation "Développeur web" à la Wild Code School
@@ -175,20 +183,22 @@ function Projets() {
         <div className="projets_box_link">
           <a
             className="projets_box_link_logo"
-            href="http://spherus.eu/"
+            href="https://mindtripwcs.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/mindtrip.png`}
+              src={Mindtrip}
               alt="logo Mindtrip"
             />
           </a>
           <div className="projets_box_link_name">
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://mindtripwcs.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="funky-container">
                 <p className="funky-base">MindTrip</p>
                 <p className="funky-letter fl-1">MindTrip</p>
@@ -252,9 +262,7 @@ function Projets() {
           <NavLink to="/projets" className="projets_box_link_logo">
             <img
               className="projets_box_link_logo_pic"
-              src={`${
-                import.meta.env.VITE_PORT_BACKEND
-              }/assets/images/profilPic.jpg`}
+              src={Profil}
               alt="logo CV"
             />
           </NavLink>
