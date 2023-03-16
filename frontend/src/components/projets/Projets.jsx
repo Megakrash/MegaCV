@@ -100,7 +100,7 @@ function Projets() {
         <div className="projets_box_link">
           <a
             className="projets_box_link_logo"
-            href="http://spherus.eu/"
+            href="https://spherus-app.megakrash.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -111,7 +111,11 @@ function Projets() {
             />
           </a>
           <div className="projets_box_link_name">
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://spherus-app.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p className="projets_box_link_name_title">Spherus</p>
             </a>
             <a
@@ -126,7 +130,11 @@ function Projets() {
         <div className="projets_box_infos">
           <p>
             Projet{" "}
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://spherus-app.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>Spherus </span>
             </a>
             à l'occasion de la formation "Développeur web" à la Wild Code School
@@ -175,7 +183,7 @@ function Projets() {
         <div className="projets_box_link">
           <a
             className="projets_box_link_logo"
-            href="http://spherus.eu/"
+            href="https://mindtripwcs.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -186,7 +194,11 @@ function Projets() {
             />
           </a>
           <div className="projets_box_link_name">
-            <a href="http://spherus.eu/" target="_blank" rel="noreferrer">
+            <a
+              href="https://mindtripwcs.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="funky-container">
                 <p className="funky-base">MindTrip</p>
                 <p className="funky-letter fl-1">MindTrip</p>
