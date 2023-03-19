@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import BigPictures from "./BigPictures";
 import Angular from "../../assets/certificats/angular.jpg";
 import Html from "../../assets/certificats/html.jpg";
 import JavaScript from "../../assets/certificats/javaScript.jpg";
@@ -6,6 +7,9 @@ import Terminal from "../../assets/certificats/terminal.jpg";
 import WildLogo from "../../assets/images/wildlogo.png";
 
 function Formation() {
+  const [showBigPictures, setShowBigPictures] = useState(false);
+  const [certif, setCertif] = useState("");
+
   return (
     <div className="formation">
       <div className="projets_box">
@@ -60,33 +64,72 @@ function Formation() {
         </div>
       </div>
       <div className="formation_box">
-        <img
-          className="formation_box_img"
-          src={JavaScript}
-          alt="logo Wild Code School"
-        />
+        <button
+          type="button"
+          className="formation_box_btn"
+          onClick={() => {
+            setCertif("java");
+            setShowBigPictures(true);
+          }}
+        >
+          <img
+            className="formation_box_btn_img"
+            src={JavaScript}
+            alt="Certificat JavaScript"
+          />
+        </button>
       </div>
       <div className="formation_box">
-        <img
-          className="formation_box_img"
-          src={Angular}
-          alt="logo Wild Code School"
-        />
+        <button
+          type="button"
+          className="formation_box_btn"
+          onClick={() => {
+            setCertif("angular");
+            setShowBigPictures(true);
+          }}
+        >
+          <img
+            className="formation_box_btn_img"
+            src={Angular}
+            alt="Certificat Angular"
+          />
+        </button>
       </div>
       <div className="formation_box">
-        <img
-          className="formation_box_img"
-          src={Html}
-          alt="logo Wild Code School"
-        />
+        <button
+          type="button"
+          className="formation_box_btn"
+          onClick={() => {
+            setCertif("html");
+            setShowBigPictures(true);
+          }}
+        >
+          <img
+            className="formation_box_btn_img"
+            src={Html}
+            alt="Certificat HTML"
+          />
+        </button>
       </div>
       <div className="formation_box">
-        <img
-          className="formation_box_img"
-          src={Terminal}
-          alt="logo Wild Code School"
-        />
+        <button
+          type="button"
+          className="formation_box_btn"
+          onClick={() => {
+            setCertif("terminal");
+            setShowBigPictures(true);
+          }}
+        >
+          <img
+            className="formation_box_btn_img"
+            src={Terminal}
+            alt="Certificat Terminal"
+          />
+        </button>
       </div>
+      {showBigPictures === true && certif !== "" && (
+        <BigPictures setShowBigPictures={setShowBigPictures} certif={certif} />
+      )}
     </div>
   );
 }

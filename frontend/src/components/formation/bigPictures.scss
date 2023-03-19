@@ -1,0 +1,87 @@
+.bigPictures {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  height: 95vh;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &_btn {
+    position: absolute;
+    background-color: $delete-color;
+    top: 2%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 85%;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &_pic {
+      height: auto;
+      width: 20px;
+      color: $tertiary-color;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $delete-color;
+      }
+    }
+  }
+
+  &_mini {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    gap: 15px;
+    height: 15%;
+
+    &_btn {
+      width: 10%;
+
+      &_img {
+        width: 100%;
+        cursor: pointer;
+        object-fit: contain;
+      }
+    }
+
+    .activ {
+      width: 10%;
+      cursor: pointer;
+      border: 3px solid $tertiary-color;
+
+      .bigPictures_mini_btn_img {
+        width: 100%;
+        cursor: pointer;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &_big {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%;
+
+    &_img {
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .bigPictures {
+    display: none;
+  }
+}
