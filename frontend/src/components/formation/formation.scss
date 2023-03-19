@@ -1,3 +1,5 @@
+@import "./bigPictures.scss";
+
 .formation {
   margin-top: 2vh;
   display: flex;
@@ -21,15 +23,12 @@
       both;
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
-    &_img {
+    &_btn {
       width: 100%;
-      transition: transform 0.3s ease-in-out;
-      cursor: pointer;
 
-      &:hover {
-        -ms-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+      &_img {
+        width: 100%;
+        cursor: pointer;
       }
     }
   }
@@ -52,6 +51,12 @@
 
       &_img {
         width: 97%;
+
+        &:hover {
+          -ms-transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+        }
       }
     }
   }

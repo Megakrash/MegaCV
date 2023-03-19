@@ -111,6 +111,14 @@
     box-shadow: 0 0 5px 1px $primary-color;
     color: $primary-color;
   }
+
+  .bigPictures {
+    background-color: $secondary-color;
+
+    &_btn {
+      background-color: $primary-color;
+    }
+  }
 }
 
 @media (max-width: 845px) {
