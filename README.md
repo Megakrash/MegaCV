@@ -7,7 +7,6 @@
 ### Project Initialization
 
 - Run command `npm run setup`
-- Check .env.sample in the back & the front then create .env
 - Run command `npm run dev`
 
 ### Available Commands
