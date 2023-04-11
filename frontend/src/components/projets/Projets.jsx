@@ -7,6 +7,7 @@ import {
   FaNodeJs,
   FaSass,
   FaFigma,
+  FaCss3Alt,
 } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import { SiEslint, SiPrettier } from "react-icons/si";
@@ -15,10 +16,69 @@ import Wildlogo from "../../assets/images/wildmovies.svg";
 import Spherus from "../../assets/images/spherus.png";
 import Mindtrip from "../../assets/images/mindtrip.png";
 import Profil from "../../assets/images/profilPic.jpg";
+import Maialogo from "../../assets/images/maiasaura.png";
 
 function Projets() {
   return (
     <div className="projets">
+      <div className="projets_box">
+        <div className="projets_box_link">
+          <a
+            className="projets_box_link_logo"
+            href="https://maiasaura.fr/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="projets_box_link_logo_pic maia"
+              src={Maialogo}
+              alt="logo maiasaura.fr"
+            />
+          </a>
+          <div className="projets_box_link_name">
+            <a
+              href="https://maia.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="projets_box_link_name_title">Maiasaura.fr</p>
+            </a>
+          </div>
+        </div>
+        <div className="projets_box_infos">
+          <p>
+            Le site de vente en ligne{" "}
+            <a href="https://maiasaura.fr/" target="_blank" rel="noreferrer">
+              <span>Maïasaura.fr </span>
+            </a>
+            commercialise une enceinte portable mp3 nommée "Maïa" à destination
+            des plus jeunes.
+          </p>
+          <p>
+            La demande de l'équipe de <span>Maïasaura</span> est de réaliser une
+            présentation interactive de l'enceinte afin d'expliquer et
+            d'expérimenter son fonctionnement avant l'achat.
+          </p>
+          <p>
+            Cette présentation n'est pas encore en ligne sur le site de vente en
+            ligne mais vous pouvez la retrouver en avant première{" "}
+            <a
+              href="https://maia.megakrash.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>ici</span>
+            </a>
+            .
+          </p>
+        </div>
+        <div className="projets_box_code">
+          <FaJsSquare className="faIcon" />
+          <FaCss3Alt className="faIcon" />
+          <FaGithub className="faIcon" />
+          <DiVisualstudio className="faIcon" />
+        </div>
+      </div>
       <div className="projets_box">
         <div className="projets_box_link">
           <a

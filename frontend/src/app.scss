@@ -61,7 +61,7 @@
   }
 }
 
-//-----------Dark theme-----------------
+//-----------Light theme-----------------
 
 .App.dark-theme {
   background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -93,6 +93,12 @@
     background-color: rgba(56, 56, 61, 0.8);
     box-shadow: 0 0 5px 1px $primary-color;
     color: $primary-color;
+
+    &_link_logo {
+      .maia {
+        background-color: $primary-color;
+      }
+    }
   }
 
   .formation_box {
