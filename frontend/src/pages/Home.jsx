@@ -65,6 +65,10 @@ export default function Home() {
         <p className="home_textBox_line7">
           <span>'ReactJS'</span>,
         </p>
+        <Typist.Delay ms={500} />
+        <p className="home_textBox_line7">
+          <span>'ReactNative'</span>,
+        </p>
         <Typist.Delay ms={250} />
         <p className="home_textBox_line8">
           <span>'Sass'</span>,
