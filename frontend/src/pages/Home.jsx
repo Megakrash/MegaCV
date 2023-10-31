@@ -1,5 +1,6 @@
 import React from "react";
 import Typist from "react-typist";
+// import TypingText from "../components/typist/TypingText";
 import Cv from "../assets/cv.pdf";
 
 export default function Home() {
@@ -35,6 +36,18 @@ export default function Home() {
           </button>
         </div>
       </div>
+      {/* <div className="home_textBox">
+        <div className="home_textBox_line1">
+          <TypingText text="firstname: 'Jonathan'," delay={65} startDelay={0} />
+        </div>
+        <TypingText
+          text="lastname: 'Scattolini',"
+          delay={65}
+          startDelay={1000}
+        />
+        <TypingText text="location: 'Nantes'," delay={65} startDelay={2000} />
+        <TypingText text="available: 'true'," delay={65} startDelay={3000} />
+      </div> */}
       <Typist
         className="home_textBox"
         avgTypingDelay={65}
